@@ -1,0 +1,6 @@
+{
+  "name": "LinguaQuest - Gamified Language Learning",
+  "description": "An immersive, tactile gamified language learning platform featuring interactive learning paths, FSRS spaced repetition, weekly leagues, quests, and real-time audio pronunciation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
