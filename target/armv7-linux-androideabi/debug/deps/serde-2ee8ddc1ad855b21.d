@@ -1,0 +1,14 @@
+/home/ahza/Documents/code-projects/linguaquest/target/armv7-linux-androideabi/debug/deps/serde-2ee8ddc1ad855b21.d: /home/ahza/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/lib.rs /home/ahza/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/integer128.rs /home/ahza/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/private/mod.rs /home/ahza/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/private/de.rs /home/ahza/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/private/ser.rs /home/ahza/Documents/code-projects/linguaquest/target/armv7-linux-androideabi/debug/build/serde-a863561c0ef09380/out/private.rs
+
+/home/ahza/Documents/code-projects/linguaquest/target/armv7-linux-androideabi/debug/deps/libserde-2ee8ddc1ad855b21.rlib: /home/ahza/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/lib.rs /home/ahza/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/integer128.rs /home/ahza/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/private/mod.rs /home/ahza/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/private/de.rs /home/ahza/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/private/ser.rs /home/ahza/Documents/code-projects/linguaquest/target/armv7-linux-androideabi/debug/build/serde-a863561c0ef09380/out/private.rs
+
+/home/ahza/Documents/code-projects/linguaquest/target/armv7-linux-androideabi/debug/deps/libserde-2ee8ddc1ad855b21.rmeta: /home/ahza/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/lib.rs /home/ahza/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/integer128.rs /home/ahza/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/private/mod.rs /home/ahza/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/private/de.rs /home/ahza/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/private/ser.rs /home/ahza/Documents/code-projects/linguaquest/target/armv7-linux-androideabi/debug/build/serde-a863561c0ef09380/out/private.rs
+
+/home/ahza/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/lib.rs:
+/home/ahza/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/integer128.rs:
+/home/ahza/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/private/mod.rs:
+/home/ahza/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/private/de.rs:
+/home/ahza/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/private/ser.rs:
+/home/ahza/Documents/code-projects/linguaquest/target/armv7-linux-androideabi/debug/build/serde-a863561c0ef09380/out/private.rs:
+
+# env-dep:OUT_DIR=/home/ahza/Documents/code-projects/linguaquest/target/armv7-linux-androideabi/debug/build/serde-a863561c0ef09380/out

@@ -1,0 +1,25 @@
+[package]
+name = "lq_bridge"
+version.workspace = true
+edition.workspace = true
+description = "C-FFI / WASM bridge exposing lq_core to Flutter via flutter_rust_bridge"
+
+[lib]
+crate-type = ["cdylib", "staticlib", "lib"]
+
+[features]
+default = []
+# Aktifkan saat build untuk target wasm32-unknown-unknown.
+wasm = ["dep:wasm-bindgen"]
+
+[dependencies]
+lq_core = { workspace = true }
+lq_types = { workspace = true }
+chrono = { workspace = true }
+uuid = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+wasm-bindgen = { version = "0.2", optional = true }
+
+[target.'cfg(not(target_arch = "wasm32"))'.dependencies]
+flutter_rust_bridge = "=2.7.0"

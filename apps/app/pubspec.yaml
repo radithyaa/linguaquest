@@ -1,0 +1,38 @@
+name: linguaquest
+description: "LinguaQuest - Gamified Cross-Platform Language Learning App (SRS v1.0)"
+publish_to: "none"
+version: 1.0.0+2
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+  flutter: ">=3.22.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_riverpod: ^2.5.1
+  # HTTP client ke API Rust (lq_api)
+  http: ^1.2.2
+  # Penyimpanan token & sesi lokal
+  shared_preferences: ^2.3.2
+  uuid: ^4.5.0
+  intl: ^0.19.0
+  # Offline database (SQLite) + FFI engine lq_core
+  sqflite: ^2.4.0
+  path: ^1.9.0
+  path_provider: ^2.1.4
+  flutter_rust_bridge: 2.7.0
+  # Perekaman audio + STT (latihan pelafalan)
+  record: ^6.1.2
+  # URL server & device info
+  device_info_plus: ^10.1.2
+  sqflite_common_ffi: ^2.3.3
+  sqlite3: ^2.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true

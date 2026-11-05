@@ -1,0 +1,17 @@
+[package]
+name = "lq_db"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+lq_core = { workspace = true }
+lq_types = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+uuid = { workspace = true }
+chrono = { workspace = true }
+anyhow = "1"
+thiserror = { workspace = true }
+tracing = "0.1"
+sqlx = { version = "0.8", default-features = false, features = ["runtime-tokio", "tls-rustls", "postgres", "chrono", "uuid", "json", "migrate"] }
+url = "2"

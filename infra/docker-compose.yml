@@ -1,0 +1,37 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: linguaquest-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: linguaquest
+      POSTGRES_PASSWORD: linguaquest
+      POSTGRES_DB: linguaquest
+    ports:
+      - "5433:5432"
+    volumes:
+      - lq_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U linguaquest -d linguaquest"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  redis:
+    image: redis:7-alpine
+    container_name: linguaquest-redis
+    restart: unless-stopped
+    command: ["redis-server", "--appendonly", "yes"]
+    ports:
+      - "6380:6379"
+    volumes:
+      - lq_redisdata:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+volumes:
+  lq_pgdata:
+  lq_redisdata:

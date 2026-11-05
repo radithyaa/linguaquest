@@ -1,0 +1,30 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/lq_core",
+    "crates/lq_types",
+    "crates/lq_db",
+    "crates/lq_api",
+    "crates/lq_bridge",
+]
+
+[workspace.package]
+version = "0.2.0"
+edition = "2021"
+
+[workspace.dependencies]
+lq_core = { path = "crates/lq_core" }
+lq_types = { path = "crates/lq_types" }
+lq_db = { path = "crates/lq_db" }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+uuid = { version = "1.10", features = ["v4", "serde"] }
+chrono = { version = "0.4", features = ["serde"] }
+tokio = { version = "1.40", features = ["full"] }
+thiserror = "1.0"
+
+[profile.release]
+opt-level = "z"
+lto = true
+codegen-units = 1
+strip = true

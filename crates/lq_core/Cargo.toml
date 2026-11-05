@@ -1,0 +1,16 @@
+[package]
+name = "lq_core"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+lq_types = { path = "../lq_types" }
+serde = { workspace = true }
+serde_json = { workspace = true }
+uuid = { workspace = true }
+chrono = { workspace = true }
+thiserror = { workspace = true }
+unicode-normalization = "0.1"
+
+[dev-dependencies]
+chrono = { workspace = true }
