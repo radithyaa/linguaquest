@@ -1,8 +1,100 @@
-node_modules/
+# -----------------------------------------------------------------------------
+# Rust (workspace: crates/*)
+# -----------------------------------------------------------------------------
+/target/
+**/*.rs.bk
+
+# -----------------------------------------------------------------------------
+# Flutter / Dart (apps/app) — artefak build & generated
+# Dikecualikan agar tidak ikut ter-commit; isi ulang dengan `flutter pub get` / build.
+# -----------------------------------------------------------------------------
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+**/doc/api/
+**/ios/Flutter/.last_build_id
+**/generated_plugin_registrant.dart
+**/generated_plugins.cmake
+**/linux/flutter/ephemeral/
+**/macos/Flutter/ephemeral/
+**/windows/flutter/ephemeral/
+
+# Folder output build (Flutter/Android/iOS/desktop)
 build/
+/apps/app/build/
+**/android/.gradle/
+**/android/.cxx/
+**/android/app/debug/
+**/android/app/profile/
+**/android/app/release/
+
+# Symbolication & obfuscation
+app.*.symbols
+app.*.map.json
+
+# Berkas lokal developer (berisi path SDK / keystore)
+**/android/local.properties
+**/android/key.properties
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/flutter_export_environment.sh
+**/ios/Pods/
+
+# -----------------------------------------------------------------------------
+# Node / JS tooling
+# -----------------------------------------------------------------------------
+node_modules/
 dist/
 coverage/
-.DS_Store
-*.log
-.env*
+
+# -----------------------------------------------------------------------------
+# Upload / unggahan runtime — data milik server, bukan source code
+# Contoh: hasil unggahan rekaman latihan (`_uploading` di lesson_screen.dart)
+# -----------------------------------------------------------------------------
+uploads/
+**/uploads/
+/upload/
+/uploaded/
+/data/uploads/
+/storage/
+/var/
+runtime_data/
+
+# File media hasil unggahan di direktori mana pun
+*.upload
+*.uploaded
+**/*.part
+
+# -----------------------------------------------------------------------------
+# Lingkungan & secret
+# -----------------------------------------------------------------------------
+.env
+.env.*
 !.env.example
+*.pem
+*.key
+.jwt_secret
+
+# -----------------------------------------------------------------------------
+# Database lokal (data volume Docker / dump hasil kerja lokal)
+# -----------------------------------------------------------------------------
+*.pgdata/
+*.dump
+*.dump.gz
+pgdata/
+pg_backup/
+
+# -----------------------------------------------------------------------------
+# Log, cache & sampah OS/editor
+# -----------------------------------------------------------------------------
+logs/
+*.log
+npm-debug.log*
+yarn-error.log*
+*.tmp
+*.swp
+.DS_Store
+Thumbs.db
+.idea/
+*.iml
+.vscode/

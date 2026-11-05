@@ -37,6 +37,12 @@ app.*.symbols
 # Obfuscation related
 app.*.map.json
 
+# Upload / berkas media runtime lokal
+/uploads/
+/upload/
+*.upload
+*.part
+
 # Android Studio will place build artifacts here
 /android/app/debug
 /android/app/profile
